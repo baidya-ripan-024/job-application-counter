@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Job Application Counter</h1>
+            <p id="current-date">June 26, 2025</p>
+        </header>
+
+        <section class="counter-display">
+            <p id="count-display">0</p>
+            <span>Applications Today</span>
+        </section>
+
+        <section class="progress-info">
+            <span id="progress-text">Set a target to see your progress.</span>
+        </section>
+
+        <section class="controls">
+            <button id="decrement-btn" class="control-btn" aria-label="Decrement count">-</button>
+            <button id="increment-btn" class="control-btn" aria-label="Increment count">+</button>
+        </section>
+
+        <section class="target-setter">
+            <input type="number" id="target-input" min="1" placeholder="Target">
+            <button id="set-target-btn">Set Daily Target</button>
+        </section>
+
+        <section class="history">
+            <h2>History</h2>
+            <ul id="history-list">
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
